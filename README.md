@@ -1,3 +1,3 @@
 # aplikasi_todo
 
-A new Flutter project.
+Flutter project. Todo List Task untuk mengatur tugas-tugas yang sudah Complete atau Uncomplete. CRUD menggunakan SQflite
