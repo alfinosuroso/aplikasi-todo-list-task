@@ -1,9 +1,9 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:aplikasi_todo/database_helper.dart';
-import 'package:aplikasi_todo/todo.dart';
+import 'package:aplikasi_todo/services/database_helper.dart';
+import 'package:aplikasi_todo/model/todo.dart';
 import 'package:flutter/material.dart';
-import 'styles.dart';
+import 'package:aplikasi_todo/style/styles.dart';
 
 class TodoPage extends StatefulWidget {
   const TodoPage({super.key});

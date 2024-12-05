@@ -1,4 +1,4 @@
-import 'package:aplikasi_todo/todo.dart';
+import 'package:aplikasi_todo/model/todo.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'dart:async';
