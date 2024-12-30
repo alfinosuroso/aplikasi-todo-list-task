@@ -1,4 +1,5 @@
 import 'package:aplikasi_todo/firebase_options.dart';
+import 'package:aplikasi_todo/view/register_page.dart';
 import 'package:aplikasi_todo/view/todo_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -25,7 +26,7 @@ class MainApp extends StatelessWidget {
               Colors.lightBlue[800]!, // Set primary color using colorScheme
         ),
       ),
-      home: const TodoPage(), // Set TodoPage as the home widget
+      home: const RegisterPage(), // Set TodoPage as the home widget
     );
   }
 }

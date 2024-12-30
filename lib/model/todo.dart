@@ -1,11 +1,11 @@
 class Todo {
-  final int? id;
+  final String uid;
   final String title;
   final String description;
   final bool completed;
 
   Todo({
-    this.id,
+    required this.uid,
     required this.title,
     required this.description,
     required this.completed,
@@ -13,7 +13,7 @@ class Todo {
 
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
-      'id': id,
+      'uid': uid,
       'title': title,
       'description': description,
       'completed': completed,
@@ -22,7 +22,7 @@ class Todo {
 
   factory Todo.fromMap(Map<String, dynamic> map) {
     return Todo(
-      id: map['id'] as int,
+      uid: map['uid'] as String,
       title: map['title'] as String,
       description: map['description'] as String,
       completed: map['completed'] == 0 ? false : true,

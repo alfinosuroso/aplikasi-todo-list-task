@@ -83,7 +83,7 @@ class DatabaseHelper {
   Future<int> updateTodo(Todo todo) async {
     var dbClient = await db;
     return await dbClient!
-        .update('todos', todo.toMap(), where: 'id = ?', whereArgs: [todo.id]);
+        .update('todos', todo.toMap(), where: 'id = ?', whereArgs: [todo.uid]);
   }
 
   Future<int> deleteTodo(int id) async {
