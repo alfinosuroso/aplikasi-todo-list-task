@@ -1,6 +1,5 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'package:aplikasi_todo/services/database_helper.dart';
 import 'package:aplikasi_todo/model/todo.dart';
 import 'package:aplikasi_todo/view/login_page.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +24,6 @@ class _TodoPageState extends State<TodoPage> {
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _descController = TextEditingController();
 
-  final dbHelper = DatabaseHelper();
   final FocusNode _titleFocusNode = FocusNode();
   final FocusNode _descFocusNode = FocusNode();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
